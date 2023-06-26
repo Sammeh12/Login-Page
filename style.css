@@ -1,0 +1,77 @@
+body {
+    background: rgb(1, 13, 17)
+    url("Background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+.container
+{
+    position: relative;
+    max-width: 500px;
+    border: 5px solid black;
+    background-color: lightcyan;
+    color: black;
+    padding: 30px 0 30px 0;
+    margin: 25px auto;
+}
+input,
+.btn{
+    width: 100%;
+    padding: 12px;
+    margin: 5px 0;
+    opacity: 0.85;
+    display: inline-block;
+    font-size: 17px;
+}
+a.button
+{
+    border-radius: 10px;
+    border: 1px solid black;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    width: 100%;
+    padding: 12px;
+    display: inline-block;
+    font-size: 17px;
+    background-color: darkblue;
+    color: white;
+    cursor: pointer;
+}
+.col1
+{
+    float: center;
+    width: 75%;
+    margin: auto;
+    padding: 0 50px;
+    margin-top: 6px;
+}
+.row::after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+.hide-md-lg
+{
+    display: none;
+}
+@media screen and (max-width: 440px) {
+    .col
+    {
+        width: 100%;
+        margin-top: 0;
+    }
+    .vl{
+        display: none;
+    }
+    .hide-md-lg{
+        display: block;
+        text-align: center;
+    }
+}
